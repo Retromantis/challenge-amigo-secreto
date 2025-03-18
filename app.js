@@ -32,12 +32,13 @@ function sortearAmigo() {
         let indiceAleatorio = Math.floor(Math.random() * nombresIngresados.length);
         let nombreSorteado = nombresIngresados[indiceAleatorio];
         document.getElementById("resultado").innerHTML = `${nombreSorteado} es tu amigo secreto `;
-        borrarLista();
+        borrarLista(false);
     }
 
 }
 
-function borrarLista() {
+function borrarLista(resultado) {
+    if (resultado) document.getElementById("resultado").innerHTML = "";
     nombresIngresados = [];
     document.getElementById("listaAmigos").innerHTML = "";
     document.getElementById("amigo").value = "";
