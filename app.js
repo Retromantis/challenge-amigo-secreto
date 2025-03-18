@@ -1,6 +1,6 @@
 
 let nombresIngresados = [];
-let mensajeDeAlerta = "Por favor, ingrese mas nombres";
+let mensajeDeAlerta = "Por favor, ingrese un nombre válido";
 
 function agregarAmigo() {
     let entrada = document.getElementById("amigo").value;
